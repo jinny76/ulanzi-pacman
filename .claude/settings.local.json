@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebSearch",
+      "Bash(file:*)",
+      "Bash(node:*)",
+      "Bash(python3:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat: 实现吃豆人跑酷 Ulanzi Deck 插件\n\n核心功能:\n- 吃豆人自动移动系统，智能寻路算法（曼哈顿距离 + 随机性）\n- 8 FPS 稳定游戏循环，支持暂停/继续\n- 豆子自动刷新机制（2秒延迟）\n- 坐标冲突检测和验证系统\n\n幸运豆系统:\n- 每次刷新确保生成1个金色幸运豆\n- 3种随机特殊效果：彩虹渐变、金色闪烁、豆子放大\n- 效果持续3秒自动消失\n\n祝福语系统:\n- 4个独立格子显示马年吉祥成语（20个成语库）\n- 吃到幸运豆时触发显示，5秒后自动消失\n- 金色渐变背景 + 大号中文字体\n- 支持位置0-3配置，自动保存默认值\n\n配置与调试:\n- 支持多种网格布局（2x5, 3x3, 3x5等）\n- 全局设置和按键级设置\n- 详细日志输出到 UlanziStudio\n- 双 Action 架构（Pac-Man Cell + 祝福语）\n\n技术实现:\n- 独立游戏引擎和渲染管理器\n- Canvas 完整场景绘制后切分到各按键\n- 智能渲染优化（仅更新变化的格子）\n- WebSocket 参数持久化\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nrefactor: 移除冗余的成语渲染日志\n\n将详细的渲染日志从 logMessage（用户可见）改为 console.log（开发调试）\n- 删除每个字符渲染时的 logMessage 提示\n- 保留 console.log 用于调试\n- 仅保留关键的配置统计信息在日志窗口显示\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}

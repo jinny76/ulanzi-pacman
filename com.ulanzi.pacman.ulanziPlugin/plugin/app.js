@@ -682,15 +682,14 @@ function triggerLuckyIdiom() {
     if (context && ACTION_CACHES[context]) {
       const char = currentIdiom.charAt(pos) || '？';
       console.log(`[PacMan]   ✅ 渲染位置 ${pos}: '${char}'`);
-      $UD.logMessage(`渲染位置${pos}: ${char}`, 'info');
       renderLuckyTextCharacter(context, char, pos);
       renderedCount++;
     } else {
       console.log(`[PacMan]   ❌ 位置 ${pos} 未配置或实例不存在`);
       if (!context) {
-        $UD.logMessage(`⚠️ 位置${pos}未在luckyTextMap中`, 'warn');
+        console.log(`[PacMan]      原因: 位置${pos}未在luckyTextMap中`);
       } else {
-        $UD.logMessage(`⚠️ 位置${pos}的context在ACTION_CACHES中不存在`, 'warn');
+        console.log(`[PacMan]      原因: 位置${pos}的context在ACTION_CACHES中不存在`);
       }
     }
   }
