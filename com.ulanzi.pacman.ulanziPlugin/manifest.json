@@ -1,0 +1,62 @@
+{
+  "Actions": [
+    {
+      "Name": "Pac-Man Cell",
+      "Icon": "assets/icons/actionIcon.png",
+      "PropertyInspectorPath": "property-inspector/pacman/inspector.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "Active",
+          "Image": "assets/icons/icon.png"
+        }
+      ],
+      "Tooltip": "吃豆人游戏网格单元",
+      "UUID": "com.ulanzi.pacman.cell",
+      "SupportedInMultiActions": false
+    },
+    {
+      "Name": "祝福语",
+      "Icon": "assets/icons/actionIcon.png",
+      "PropertyInspectorPath": "property-inspector/luckytext/inspector.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "Active",
+          "Image": "assets/icons/icon.png"
+        }
+      ],
+      "Tooltip": "显示吉祥成语的单个文字（位置0-3）",
+      "UUID": "com.ulanzi.pacman.luckytext",
+      "SupportedInMultiActions": false
+    }
+  ],
+  "Author": "Ulanzi Community",
+  "Name": "Pac-Man Runner",
+  "Description": "吃豆人在按键之间跑来跑去",
+  "Icon": "assets/icons/icon.png",
+  "Version": "1.0.0",
+  "Category": "Games",
+  "CategoryIcon": "assets/icons/categoryIcon.png",
+  "CodePath": "plugin/app.html",
+  "Type": "JavaScript",
+  "SupportedInMultiActions": false,
+  "PrivateAPI": true,
+  "UUID": "com.ulanzi.pacman",
+  "GlobalSettings": {
+    "PropertyInspectorPath": "property-inspector/global/settings.html"
+  },
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.11"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Software": {
+    "MinVersion": "2.1.4"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Name": "Pac-Man Runner",
+  "Description": "Pac-Man running across your buttons",
+  "Actions": [
+    {
+      "Name": "Pac-Man Cell",
+      "Tooltip": "Pac-Man game grid cell"
+    }
+  ],
+  "Localization": {
+    "按键位置": "Button Position",
+    "行 (Row)": "Row",
+    "列 (Column)": "Column",
+    "请为每个按键配置其在网格中的位置（从0开始计数）": "Configure the position of each button in the grid (starting from 0)",
+    "使用说明": "Instructions"
+  }
+}

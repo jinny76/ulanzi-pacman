@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>祝福语设置</title>
+  <link rel="stylesheet" href="../../libs/css/uspi.css">
+</head>
+<body>
+  <div class="uspi-wrapper hidden">
+
+    <form id="property-inspector">
+
+      <div class="uspi-heading" data-localize>文字位置</div>
+
+      <div class="uspi-item">
+        <div class="uspi-item-label" data-localize>位置 (Position)</div>
+        <select class="uspi-item-value" name="index">
+          <option value="0">第1个字（位置0）</option>
+          <option value="1">第2个字（位置1）</option>
+          <option value="2">第3个字（位置2）</option>
+          <option value="3">第4个字（位置3）</option>
+        </select>
+      </div>
+
+      <div class="tip info" data-localize>
+        设置这个按键显示成语的第几个字（按顺序排列）
+      </div>
+
+      <hr>
+
+      <div class="uspi-heading" data-localize>使用说明</div>
+
+      <div class="tip info">
+        <strong>配置方法:</strong> 将4个"祝福语"添加到按键上，分别设置为位置0-3
+      </div>
+
+      <div class="tip info">
+        <strong>触发条件:</strong> 吃到金色幸运豆时，4个按键会按顺序显示吉利的四字成语
+      </div>
+
+      <div class="tip warn">
+        <strong>注意:</strong> 必须配齐4个按键，位置0-3各一个，成语才能完整显示
+      </div>
+
+    </form>
+
+  </div>
+
+  <script src="../../libs/js/constants.js"></script>
+  <script src="../../libs/js/eventEmitter.js"></script>
+  <script src="../../libs/js/timers.js"></script>
+  <script src="../../libs/js/utils.js"></script>
+  <script src="../../libs/js/ulanziApi.js"></script>
+  <script src="./inspector.js"></script>
+</body>
+</html>
