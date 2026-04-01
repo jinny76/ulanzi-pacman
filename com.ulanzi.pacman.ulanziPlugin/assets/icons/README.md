@@ -1,38 +1,64 @@
-# 图标资源说明
+# 吃豆人插件图标资源
 
-插件需要以下图标文件：
+本目录包含吃豆人插件所需的所有图标资源。
 
-## 必需的图标
+## 图标清单
 
-1. **icon.png** (144x144px)
-   - 插件主图标
-   - 建议：黄色吃豆人图案
+所有图标均使用Python自动生成，采用经典街机吃豆人风格。
 
-2. **actionIcon.png** (40x40px)
-   - Action列表图标
-   - 建议：小尺寸吃豆人图案
+### 1. icon.png (144x144px)
+- **用途**: 插件主图标
+- **设计**: 经典黄色吃豆人 + 豆子轨迹
+- **背景**: 深蓝黑色圆角矩形
+- **特点**: 简洁易识别，复古街机风格
 
-3. **categoryIcon.png** (196x196px)
-   - 分类图标
-   - 建议：吃豆人 + 游戏主题
+### 2. categoryIcon.png (196x196px)
+- **用途**: 分类图标
+- **设计**: 吃豆人在3x3迷宫网格中
+- **背景**: 深色背景 + 蓝色发光网格线
+- **特点**: 强调游戏场景，四角有小豆子
 
-## 临时解决方案
+### 3. actionIcon.png (40x40px)
+- **用途**: Action列表图标
+- **设计**: 小吃豆人 + 发光能量豆 + 速度线
+- **背景**: 深色圆形
+- **特点**: 动态感强，适合小尺寸显示
 
-如果暂时没有图标，可以：
+## 设计规范
 
-1. 从网上搜索"pac-man icon png"下载免费图标
-2. 使用图片编辑工具调整到对应尺寸
-3. 或者复制analogclock demo的图标作为占位符：
+### 配色方案
+- **吃豆人**: 金黄色 `#FFD700`
+- **背景**: 深蓝黑 `#0a0e27`
+- **网格线**: 蓝色 `#2a4a8a`
+- **豆子**: 白色 `#FFFFFF`
+
+### 风格特点
+- 扁平化设计，无渐变
+- 圆角处理，现代感
+- 高对比度，易识别
+- 复古街机色彩
+
+## 重新生成图标
+
+如果需要修改图标，运行项目根目录的生成脚本：
 
 ```bash
-cp "G:/projects/UlanziDeckPlugin-SDK/demo/com.ulanzi.analogclock.ulanziPlugin/assets/icons/icon.png" "./icon.png"
-cp "G:/projects/UlanziDeckPlugin-SDK/demo/com.ulanzi.analogclock.ulanziPlugin/assets/icons/actionIcon.png" "./actionIcon.png"
-cp "G:/projects/UlanziDeckPlugin-SDK/demo/com.ulanzi.analogclock.ulanziPlugin/assets/icons/categoryIcon.png" "./categoryIcon.png"
+cd G:\projects\ulanzi-plugin
+python generate_icons.py
 ```
 
-## 图标设计建议
+## 文件信息
 
-- **背景**: 透明或纯黑色
-- **主色**: 黄色 (#FFFF00) 代表吃豆人
-- **辅助色**: 粉色/红色 (#FFB8AE) 代表豆子
-- **风格**: 简约、像素化或现代扁平
+```
+assets/icons/
+├── icon.png           (1.2KB, 144x144)
+├── categoryIcon.png   (1.4KB, 196x196)
+├── actionIcon.png     (453B, 40x40)
+└── README.md          (本文件)
+```
+
+---
+
+**生成时间**: 2026-04-01
+**生成工具**: Python + PIL
+**设计主题**: 经典吃豆人街机游戏
