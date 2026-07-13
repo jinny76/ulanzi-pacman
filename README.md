@@ -1,5 +1,7 @@
 # 🎮 Pac-Man Runner - UlanziDeck 吃豆人插件
 
+[![Available on Ulanzi Community Store](https://raw.githubusercontent.com/narlei/ulanzicommunitystore/main/docs/badges/ulanzi-community-store.svg)](https://ulanzicommunitystore.narlei.com)
+
 <div align="center">
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
