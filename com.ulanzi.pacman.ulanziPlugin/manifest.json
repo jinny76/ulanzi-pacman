@@ -19,7 +19,7 @@
   "Name": "Pac-Man Runner",
   "Description": "吃豆人在按键之间跑来跑去",
   "Icon": "assets/icons/icon.png",
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "Category": "Games",
   "CategoryIcon": "assets/icons/categoryIcon.png",
   "CodePath": "plugin/app.html",
